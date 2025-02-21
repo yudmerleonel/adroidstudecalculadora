@@ -16,6 +16,7 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         android:gravity="center"
+        android:layout_gravity="center_horizontal"
         android:layout_marginBottom="16dp"/>
 
     <EditText
@@ -24,7 +25,9 @@
         android:layout_height="wrap_content"
         android:hint="Ingrese valor"
         android:inputType="numberDecimal"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:textColor="@color/black"/>
 
     <Spinner
         android:id="@+id/spinnerCategory"
@@ -49,9 +52,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Convertir"
-        android:backgroundTint="@color/blue"
+        android:background="@color/purple_500"
         android:textColor="@color/white"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginTop="12dp"
+        android:padding="12dp"/>
 
     <TextView
         android:id="@+id/resultText"
@@ -60,8 +64,9 @@
         android:text="Resultado: "
         android:textSize="18sp"
         android:textColor="@color/black"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginTop="12dp"
+        android:padding="8dp"
+        android:background="@android:color/darker_gray"
+        android:textAlignment="center"/>
 
 </LinearLayout>
-
-
