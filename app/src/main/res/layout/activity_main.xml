@@ -3,41 +3,65 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversor de Unidades"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
 
     <EditText
         android:id="@+id/inputValue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese valor"
-        android:inputType="numberDecimal"/>
+        android:inputType="numberDecimal"
+        android:padding="10dp"/>
 
     <Spinner
         android:id="@+id/spinnerCategory"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
 
     <Spinner
         android:id="@+id/spinnerFrom"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
 
     <Spinner
         android:id="@+id/spinnerTo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
 
     <Button
         android:id="@+id/convertButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Convertir"/>
+        android:text="Convertir"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:layout_marginTop="12dp"/>
 
     <TextView
         android:id="@+id/resultText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Resultado: "/>
+        android:text="Resultado: "
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="12dp"/>
 
 </LinearLayout>
+
 
